@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* CSS Variables */
+
+:root {
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --primary-color: #0652dd;
+    --secondary-color: hsl(215, 51%, 70%);
+    --line-height: 1.7rem;
+    --transition: 0.4s ease-in;
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* ### Neutral */
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+/* Smooth scroll effect */
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+body {
+    font-family: "Outfit", sans-serf;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* Dark theme starts*/
+
+body.dark {
+    background-color: hsl(217, 54%, 11%);
+}
+
+body.dark .bar {
+    background-color: #fff;
+}
+
+body.dark p {
+    color: #fff;
+}
+
+body.dark h3 {
+    color: #fff;
+}
+
+body.dark nav {
+    background-color: #1e272e;
+    box-shadow: 2px 3px 2px #111010;
+}
+
+body.dark .name {
+    color: var(--primary-color);
+}
+
+body.dark .role {
+    color: var(--secondary-color);
+}
+
+body.dark footer {
+    color: #fff;
+    border-top: 1px solid #111010;
+    box-shadow: 0px -2px 3px #111010;
+}
+
+
+/* Dark theme ends */
+
+
+/* Navbar starts */
+
+.fist {
+    color: var(--secondary-color);
+}
+
+.pseudo {
+    color: var(--primary-color);
+}
+
+.store {
+    color: var(--secondary-color);
+}
+
+nav {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 3px 2px #f1f1f1;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.nav-link {
+    font-weight: var(--bold-font);
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    background-color: #020202;
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 6px auto;
+}
+
+
+/* Dark theme switcher*/
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    width: 50px;
+    height: 29px;
+    background-color: var(--main-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 6px;
+    position: relative;
+}
+
+.switcher {
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.moon {
+    color: #ffa502;
+}
+
+.sun {
+    color: #ff4757;
+}
+
+.checkbox:checked+.label .switcher {
+    transform: translateX(24px);
+}
+
+
+/* Dark theme switcher ends */
+
+
+/* Navbar ends */
+
+
+/* land section starts */
+
+.land {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.9rem;
+    max-width: 1100px;
+    margin: 2rem auto -4rem;
+}
+
+.intro-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text h3 {
+    margin-bottom: 0.5rem;
+}
+
+.land p {
+    line-height: var(--line-height);
+}
+
+.hear {
+    color: var(--primary-color);
+}
+
+.connecting {
+    color: var(--secondary-color);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 0.6rem;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.red {
+    background-color: var(--secondary-color);
+    margin-right: 1.5rem;
+}
+
+.red:hover {
+    background-color: #f1262d;
+    color: #fff;
+}
+
+.blue {
+    background-color: var(--primary-color);
+}
+
+.blue:hover {
+    background-color: #095cf7;
+    color: #fff;
+}
+
+.land .img {
+    max-width: 30rem;
+    border-top: 40px groove var(--primary-color);
+    border-bottom: 40px groove var(--primary-color);
+    border-right: 28px solid var(--secondary-color);
+    border-left: 28px solid var(--secondary-color);
+}
+
+iframe {
+    max-width: 476px;
+    border-top: 40px groove var(--primary-color);
+    border-bottom: 40px groove var(--primary-color);
+    border-right: 28px solid var(--cyan);
+    border-left: 28px solid var(--cyan);
+}
+
+
+/* land section ends */
+
+
+/* About section start*/
+
+.about {
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.about h3 {
+    font-size: 3em;
+    margin-bottom: -20px;
+}
+
+.about p {
+    font-size: 1.5em;
+}
+
+.about h3 {
+    text-shadow: 2px 2px 2px #333;
+}
+
+.about p {
+    text-shadow: 2px 2px 2px #333;
+    font-size: 1.8rem;
+}
+
+
+/* About section ends */
+
+
+/* Image gallery starts */
+
+.store-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.store-gallery img,
+.store-gallery a {
+    width: 100%;
+    height: 100%;
+}
+
+.store-gallery a:first-child {
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+
+.store-gallery a:nth-child(2) {
+    grid-column: 3/5;
+}
+
+
+/* Image gallery ends */
+
+
+/* Stakeholders start */
+
+.people {
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.people h1 {
+    position: relative;
+    text-align: center;
+    font-size: 70px;
+    color: var(--cyan);
+}
+
+.stakeholders {
+    margin: 2rem auto;
+    max-width: 1100px;
+}
+
+.stakeholders img {
+    border-radius: 0.6rem;
+}
+
+.persons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 1rem;
+}
+
+.name {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.role {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+/* Stakeholders ends */
+
+
+/* Subscription form ends */
+
+
+/* Social icons */
+
+.social {
+    text-align: center;
+    margin: 2rem;
+}
+
+.socicons {
+    font-size: 1.3rem;
+}
+
+
+/* Footer */
+
+footer {
+    border-top: 1px solid #f1f1f1;
+    box-shadow: 0px -2px 3px #f1f1f1;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+/* Scroll to top button starts */
+
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.up-arrow {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+/* Store Grid */
+
+.storegrid {
+    display: grid;
+    height: relative;
+    align-content: start;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+/* NFT Card Preview */
+
+.container {
+    padding: 1.25rem;
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.container .main-image {
+    position: relative;
+}
+
+.container .main-image div {
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 60%);
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.container .main-image div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container .main-image div img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container p {
+    color: hsl(0, 0%, 100%)
+}
+
+.container h2 {
+    color: var(--white);
+    margin: 1rem 0.5rem 0.5rem 0;
+}
+
+.container h2:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.container ul li:first-child {
+    color: var(--cyan);
+}
+
+.container ul li {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.container ul li img {
+    margin-right: 0.5rem;
+}
+
+.container .btncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 2rem;
+}
+
+
+/* Buy NFT button */
+
+button {
+    position: relative;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-bg);
+    margin: 10px 75px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 1s;
+    border-radius: 4px;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004);
+}
+
+button:hover {
+    background: var(--cyan);
+    box-shadow: 0 0 10px var(--cyan), 0 0 30px var(--cyan), 0 0 60px var(--cyan), 0 0 100px var(--cyan);
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 400%;
+    background: var(--cyan);
+    transition: 1s;
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.33s * var(--1));
+}
+
+button:hover:before {
+    width: 120%;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+button:after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #0e1538;
+}
+
+button:hover:after {
+    background: var(--cyan);
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
+    color: #fff;
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    opacity: 1;
+}
+
+@media(min-width: 500px) {
+    .container {
+        width: 400px;
+        margin: 0 auto 1rem;
+    }
+}
+
+
+/* Scroll to top button ends */
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    ul {
+        background-color: #fff;
+        flex-direction: column;
+        position: fixed;
+        left: 100%;
+        top: 5rem;
+        width: 100%;
+        text-align: center;
+    }
+    ul.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2rem 0;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .land {
+        flex-direction: column;
+        max-width: 500px;
+    }
+    .intro-text h1 {
+        font-size: 2.3rem;
+    }
+    .btn {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+    iframe {
+        max-width: 26rem;
+    }
+    .stand-1 {
+        left: 170px;
+    }
+    .stand-2 {
+        left: 225px;
+    }
+    .about {
+        text-align: center;
+    }
+    .persons {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .land {
+        max-width: 330px;
+    }
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+    iframe {
+        max-width: 330px;
+    }
+    .stand-1 {
+        left: 140px;
+    }
+    .stand-2 {
+        left: 195px;
+    }
+}
