@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Web page CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title> &#x1F3EA; PseudoStore</title>
+
+    <!-- Prompt before Entering -->
+    <script>
+        var person = prompt("Enter your name : ");
+    </script>
+</head>
+
+<body>
+
+
+    <nav>
+        <a href="#" class="logo">
+            <h1>
+                <span class="pseudo">Pseudo</span><span class="store">Store</span><span class="fist">&#x1F3EA;</span>
+            </h1>
+        </a>
+
+        <!-- Dark/light theme switcher -->
+        <div class="theme-switch">
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="label">
+          <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+          <ion-icon name="moon-outline" class="moon"></ion-icon>
+          <div class="switcher"></div>
+        </label>
+        </div>
+
+        <ul>
+            <li class="nav-item">
+                <a href="#about" class="nav-link" id="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#store" class="nav-link" id="nav-link">Store</a>
+            </li>
+            <li class="nav-item">
+                <a href="#stakeholders" class="nav-link" id="nav-link">Team</a>
+            </li>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+    </nav>
+
+    <!-- Main section -->
+    <section class="land">
+        <div class="intro-text">
+            <h1>
+                <span class="hear">Welcome to the Store</span> <br />
+                <span class="connecting"> <span id="name"></span>
+                <script>
+                    document.getElementById("name").innerHTML = person;
+                </script>
+                </span>
+            </h1>
+            <p>
+                A project built to simulate a basic Marketplace <br /> Made with only frontend tools (HTML, CSS, and JavaScript)
+            </p>
+            <a class="btn red" href="#store">Buy Now</a>
+        </div>
+        <div class="i-frame">
+            <iframe width="500" height="500" src="./assets/images/nftgif.gif"></iframe>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <h3>THE NFT MARKETPLACE</h3>
+        <p>
+            Our primary objective is to create a frontend NFT Marketplace for the course LBYCPG3
+        </p>
+
+        <h3>No backend, all Frontend </h3>
+        <p>
+            With the use of HTML, CSS, and JavaScript to give the user an experience and a design to please the eyes
+        </p>
+    </section>
+
+    <!-- Store Section -->
+
+    <div class="storegrid" id="store">
+        <!-- NFT1 -->
+        <div class="container">
+            <article class="main-image">
+
+                <img src="./assets/images/nft1.jpg" alt="nft1" />
+
+
+                <div>
+                    <a href="./assets/images/nft1.jpgg" target="_blank">
+                        <img src="./assets/images/icon-view.svg" alt="" />
+                    </a>
+                </div>
+            </article>
+
+            <article>
+                <h2> Mekanism #051</h2>
+
+                <ul>
+                    <li><img src="./assets/images/icon-ethereum.svg" alt="" /> 0.5 ETH</li>
+                    <li><img src="./assets/images/icon-clock.svg" alt="" /> 3 days left
+                    </li>
+                </ul>
+
+            </article>
+
+            <article class="btncontainer">
+                <button href="#" style="--clr:#00ccff;--1:1;"><span>Buy NFT</span>
+            </article>
+        </div>
+        <!-- NFT2 -->
+        <div class="container">
+            <article class="main-image">
+
+              <img src="./assets/images/nft2.png" alt="nft2" />
+              <div>
+                <a href="./assets/images/nft2.png" target="_blank">
+                  <img src="./assets/images/icon-view.svg" alt="" />
+                </a>
+              </div>
+            </article>
+
+            <article>
+              <h2> Commonwealth Cat #5821</h2>
+
+              <ul>
+                <li><img src="./assets/images/icon-ethereum.svg" alt="" /> 20
+                  ETH</li>
+                <li><img src="./assets/images/icon-clock.svg" alt="" /> 7 days
+                  left</li>
+              </ul>
+
+            </article>
+
+            <article class="btncontainer">
+              <button href="#" style="--clr:#00ccff;--1:1;"><span>Buy NFT</span>
+              </article>
+        </div>
+        <!-- NFT3 -->
+        <div class="container">
+              <article class="main-image">
+
+                <img src="./assets/images/nft3.png" alt="" />
+
+
+                <div>
+                  <a href="./assets/images/nft3.png" target="_blank">
+                    <img src="./assets/images/icon-view.svg" alt="" />
+                  </a>
+                </div>
+              </article>
+
+              <article>
+                <h2> CryptoSkull #2510</h2>
+                <ul>
+                  <li><img src="./assets/images/icon-ethereum.svg" alt="" /> 1.25
+                    ETH</li>
+                  <li><img src="./assets/images/icon-clock.svg" alt="" /> 4 days
+                    left</li>
+                </ul>
+
+              </article>
+
+              <article class="btncontainer">
+                <button href="#" style="--clr:#00ccff;--1:1;"><span>Buy NFT</span>
+                </article>
+        </div>
+        <!-- NFT4 -->
+        <div class="container">
+          <article class="main-image">
+
+            <img src="./assets/images/nft4.png" alt="nft4" />
+
+
+            <div>
+              <a href="./assets/images/nft4.png" target="_blank">
+                <img src="./assets/images/icon-view.svg" alt="" />
+              </a>
+            </div>
+          </article>
+
+          <article>
+            <h2> Wooshi Word #9871 </h2>
+           
+            <ul>
+              <li><img src="./assets/images/icon-ethereum.svg" alt="" /> 0.01
+                ETH</li>
+              <li><img src="./assets/images/icon-clock.svg" alt="" /> 1 day
+                left</li>
+            </ul>
+
+          </article>
+
+          <article class="btncontainer">
+            <button href="#" style="--clr:#00ccff;--1:1;"><span>Buy NFT</span>
+            </article>
+        </div>
+        <!-- NFT5 -->
+        <div class="container">
+        <article class="main-image">
+
+          <img src="./assets/images/nft5.gif" alt="nft5" />
+
+
+          <div>
+            <a href="./assets/images/nft5.gif" target="_blank">
+              <img src="./assets/images/icon-view.svg" alt="" />
+            </a>
+          </div>
+        </article>
+
+        <article>
+          <h2> Aeonium Sky Block 7</h2>
+          <ul>
+            <li><img src="./assets/images/icon-ethereum.svg" alt="" /> 33
+              ETH</li>
+            <li><img src="./assets/images/icon-clock.svg" alt="" /> 7 days
+              left</li>
+          </ul>
+
+        </article>
+
+        <article class="btncontainer">
+          <button href="#" style="--clr:#00ccff;--1:1;"><span>Buy NFT</span>
+          </article>
+        </div>
+        <!-- NFT6 -->
+        <div class="container">
+          <article class="main-image">
+  
+            <img src="./assets/images/nft6.png" alt="nft6" />
+  
+  
+            <div>
+              <a href="./assets/images/nft6.png" target="_blank">
+                <img src="./assets/images/icon-view.svg" alt="" />
+              </a>
+            </div>
+          </article>
+  
+          <article>
+            <h2> Chilled Kong #0792 </h2>
+            <ul>
+              <li><img src="./assets/images/icon-ethereum.svg" alt="" /> 0.8
+                ETH</li>
+              <li><img src="./assets/images/icon-clock.svg" alt="" /> 2 days
+                left</li>
+            </ul>
+  
+          </article>
+  
+          <article class="btncontainer">
+            <button href="#" style="--clr:#00ccff;--1:1;"><span>Buy NFT</span>
+            </article>
+        </div>
+        <!-- NFT7 -->
+        <div class="container">
+          <article class="main-image">
+  
+            <img src="./assets/images/nft7.png" alt="nft7" />
+  
+  
+            <div>
+              <a href="./assets/images/nft7.png" target="_blank">
+                <img src="./assets/images/icon-view.svg" alt="" />
+              </a>
+            </div>
+          </article>
+  
+          <article>
+            <h2> Clay Nation #8571</h2>
+            <ul>
+              <li><img src="./assets/images/icon-ethereum.svg" alt="" /> 1
+                ETH</li>
+              <li><img src="./assets/images/icon-clock.svg" alt="" /> 3 days
+                left</li>
+            </ul>
+  
+          </article>
+  
+          <article class="btncontainer">
+            <button href="#" style="--clr:#00ccff;--1:1;"><span>Buy NFT</span>
+            </article>
+        </div>
+        <!-- NFT8 -->
+        <div class="container">
+          <article class="main-image">
+  
+            <img src="./assets/images/nft8.png" alt="nft8" />
+  
+  
+            <div>
+              <a href="./assets/images/nft8.png" target="_blank">
+                <img src="./assets/images/icon-view.svg" alt="" />
+              </a>
+            </div>
+          </article>
+  
+          <article>
+            <h2> Crypto Pet #3003 </h2>
+            <ul>
+              <li><img src="./assets/images/icon-ethereum.svg" alt="" /> 2
+                ETH</li>
+              <li><img src="./assets/images/icon-clock.svg" alt="" /> 14 days
+                left</li>
+            </ul>
+  
+          </article>
+  
+          <article class="btncontainer">
+            <button href="#" style="--clr:#00ccff;--1:1;"><span>Buy NFT</span>
+            </article>
+        </div>
+
+
+
+    </div>
+            
+            
+
+          <!-- Team members -->
+          
+          <section class="people" id="stakeholders">
+            <h1>  THE TEAM </h1>
+            <div class="stakeholders">
+
+              
+              <div class="persons">
+                <div class="person-1">
+                  <img src="./assets/images/justine.jpg" alt="Justine Juan" />
+                  <p class="name">Justine Juan</p>
+                </div>
+                <div class="person-2">
+                  <img src="./assets/images/daniel.jpg" alt="Daniel John Lemi" />
+                  <p class="name">Daniel John Lemi</p>
+                </div>
+                <div class="person-3">
+                  <img src="./assets/images/keenan.jpg" alt="Keenan Mayuga" />
+                  <p class="name">Keenan Mayuga</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+          <footer>LBYCPG3 - EQ3</footer>
+
+          <!-- Scroll to top button -->
+          <i class="scroll-up" id="scroll-up"><img
+              src="./assets/images/icons8-upward-arrow.png"
+              class="socicon up-arrow"
+              alt="up-arrow"
+              /></i>
+
+          <!-- Web page script -->
+          <script src="assets/js/app.js"></script>
+
+          <!-- Ion icons CDN -->
+          <script type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        </body>
+
+      </html>
